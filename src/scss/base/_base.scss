@@ -1,0 +1,61 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+html,
+body {
+	height: 100%;
+	line-height: 1;
+	font-size: 16px;
+	font-family: 'OpenSans';
+	background-color: variables.$color-background;
+	color: variables.$color-text;
+}
+
+.page-container {
+	margin: 0 auto;
+	width: 100%;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+@include mixins.xxl {
+	.page-container {
+		max-width: 1440px;
+	}
+}
