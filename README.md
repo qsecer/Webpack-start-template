@@ -2,6 +2,12 @@
 
 ## Commands:
 
+### Deployment to Github-Pages
+
+```shell
+pnpm run gh-pages
+```
+
 ### Starting a server for development
 
 ```shell
