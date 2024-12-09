@@ -1,8 +1,4 @@
 /*стили кнопок  и общие стили*/
-@font-face{
-    font-family: 'TTLakes';
-    src: local('TTLakes'), url("fonts/TTLakes-Regular.ttf");
-}
 
 body{
     background-color: #F8F8F8;
@@ -21,7 +17,7 @@ body{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-image: url("img/burger.svg");
+    background-image: url("../img/burger.svg");
     border: none;
     margin-right: 8px;
     margin-left: 24px;
@@ -39,7 +35,7 @@ body{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-image: url("img/call.svg");
+    background-image: url("../img/call.svg");
     border: none;
     margin-right: 8px;
 }
@@ -47,7 +43,7 @@ body{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-image: url("img/chat.svg");
+    background-image: url("../img/chat.svg");
     border: none;
     margin-right: 8px;
     margin-left: 8px;
@@ -56,7 +52,7 @@ body{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-image: url("img/profile.svg");
+    background-image: url("../img/profile.svg");
     border: none;
     margin-right: 20px;
     margin-left: 8px;
@@ -66,7 +62,7 @@ body{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-image: url("img/repair.svg");
+    background-image: url("../img/repair.svg");
     position: relative;
     border: none;
     margin-right: 8px;
@@ -78,7 +74,7 @@ body{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-image: url("img/checkstatus.svg");
+    background-image: url("../img/checkstatus.svg");
     border: none;
     position: relative;
     margin-top: 24px;
@@ -141,7 +137,7 @@ li{
         height: 24px;
         border: none;
         background-color: transparent;
-        background-image: url("img/expand.svg");
+        background-image: url("../img/expand.svg");
         padding: 0;
         margin: 0;
         bottom: 0;
@@ -301,7 +297,7 @@ hr{
             width: 40px;
             height: 40px;
             border-radius: 50%;
-            background-image: url("img/repair.svg");
+            background-image: url("../img/repair.svg");
             position: relative;
             border: none;
             margin-right: 8px;
