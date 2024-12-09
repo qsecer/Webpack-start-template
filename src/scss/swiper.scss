@@ -1,0 +1,205 @@
+/*Стили для свайпера*/
+.brand-table-button{
+    font-family: inherit
+;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    body{
+        background-color: #F8F8F8;
+    }
+    .swiper {
+        width: 100%;
+        height: 140px;
+        margin-left: 16px;
+    }
+    .swiper-slide, swiper-slide-active{
+        display: flex;
+        justify-content: space-between;
+        width: 240px;
+        height: 72px;
+        background-color: white;
+        border-radius: 10px;
+
+    }
+    swiper:after{
+        content: "";
+        position: absolute;
+        width: 24px;
+        height: 81px;
+        background-image: linear-gradient(#F8F8F8 0.1%, #F8F8F8 100%);
+    }
+    .swiper-pagination-bullet{
+        width: 12px;
+        height: 12px;
+        background-color: #B5B6BC;
+    }
+    .swiper-image{
+        margin-bottom: auto;
+        margin-top: auto;
+        margin-left: 16px;
+
+    }
+    .swiper-go-brand{
+        float: right;
+        margin: 16px;
+    }
+    label{
+        width: 240px;
+        height: 72px;
+    }
+    .brand-table{
+        display: none;
+    }
+    .brand-table-button{
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1119px) {
+    body{
+        background-color: #F8F8F8;
+        margin: 0;
+    }
+    .main__h2{
+        background-color: white;
+        padding-left: 24px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        margin: 0;
+    }
+    .swiper{
+        display: none;
+    }
+    .brand-table{
+        display: grid;
+        grid-template-columns: repeat(3, 224px);
+        gap: 16px 24px ;
+        margin: 24px;
+    }
+    .brand-table-item:not(:nth-child(-n + 6)){
+        display: none;
+    }
+    .brand-table-item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 224px;
+        height: 72px;
+        background-color: white;
+        border-radius: 10px;
+    }
+    .brand-table-image{
+        margin: 16px;
+    }
+    .brand-table-go{
+        margin: 16px;
+    }
+    .brand-table-button {
+        display: flex;
+        position: relative;
+        align-items: center;
+        border: 0px;
+        padding: 0;
+        background: transparent;
+        margin-left: 57px;
+
+    }
+     .show-more::before{
+        position: absolute;
+        content: "";
+        width: 24px;
+        height: 24px;
+        background-image: url("../img/expand.svg");
+         left: -30px;
+         bottom: -4px;
+    }
+     .hide::before{
+         position: absolute;
+         content: "";
+         width: 24px;
+         height: 24px;
+         background: url("../img/expand.svg") 0 0 no-repeat;
+         left: -30px;
+         bottom: -4px;
+         transform: rotate(180deg);
+     }
+
+}
+
+@media screen and (min-width: 1120px) {
+
+    body{
+        background-color: #F8F8F8;
+    }
+    .swiper{
+        display: none;
+    }
+    .brand-table {
+        display: grid;
+        grid-template-columns: repeat(4, 240px);
+        gap: 16px 24px;
+        margin-bottom: 24px;
+        margin-left: 32px;
+
+
+    }
+    .brand-table-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 240px;
+        height: 72px;
+        background-color: white;
+        border-radius: 10px;
+
+    }
+    .brand-table-image{
+        margin: 16px;
+    }
+    .brand-table-go{
+        margin: 16px;
+    }
+    .brand-table-button{
+        border: 0;
+        padding: 0;
+        margin-left: 63px;
+        background-color: transparent;
+
+    }
+
+    .brand-table-item:not(:nth-child(-n + 8)){
+        display: none;
+    }
+    .brand-table-button {
+        display: flex;
+        position: relative;
+        align-items: center;
+        border: 0px;
+        padding: 0;
+        background: transparent;
+        margin-left: 57px;
+
+    }
+    .show-more::before{
+        position: absolute;
+        content: "";
+        width: 24px;
+        height: 24px;
+        background-image: url("../img/expand.svg");
+        left: -30px;
+        bottom: -4px;
+    }
+    .hide::before{
+        position: absolute;
+        content: "";
+        width: 24px;
+        height: 24px;
+        background: url("../img/expand.svg") 0 0 no-repeat;
+        left: -30px;
+        bottom: -4px;
+        transform: rotate(180deg);
+    }
+}
+
+
