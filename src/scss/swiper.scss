@@ -16,7 +16,7 @@
         overflow: hidden;
     }
     .swiper-wrapper{
-        display: flex;
+        display: -webkit-box;
     }
     .swiper-slide, swiper-slide-active{
         display: flex;
