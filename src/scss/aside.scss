@@ -1,7 +1,7 @@
 
 @media (min-width:320px) and (max-width: 767px) {
     .aside{
-        display: none;
+        
         flex-direction: column;
         box-sizing: border-box;
         background-color: white;
@@ -10,9 +10,13 @@
         font-family: inherit;
         position: absolute;
         z-index: 10;
-        
-    
-    
+        left: -100vw;
+        transition: all .7s ease;
+        .aside__cap{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-start;
+        }
         .aside__basement{
             margin-left: 24px;
             position: absolute;
@@ -32,22 +36,10 @@
             border: none;
             padding: 0;
             z-index: 0;
-            margin-left: 194px;
+            margin-right: 16px;
             margin-top: 23px;
         }
-        .aside__button, hidden-burger{
-            display: inline-flex;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-image: url("../img/burger--hidden.svg");
-            position: relative;
-            border: none;
-            padding: 0;
-            z-index: 0;
-            margin-top: 24px;
-            margin-left: 24px;
-        }
+        
         .search-PC:before{
             position: absolute;
             content: "";
@@ -121,10 +113,14 @@
                 background-color: #7E7E82;
             }
     }
+    .aside.active{
+        left: 0vw;
+
+    }
 }
 @media (min-width:767px) and (max-width: 1439px) {
     .aside{
-        display: none;
+        
         flex-direction: column;
         box-sizing: border-box;
         background-color: white;
@@ -132,8 +128,14 @@
         height: 100vh;
         font-family: inherit;
         position: absolute;
+        left: -100vw;
         z-index: 10;
-        
+        transition: all .7s ease;
+        .aside__cap{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-start;
+        }
     
     
         .aside__basement{
@@ -158,19 +160,7 @@
             margin-left: 194px;
             margin-top: 23px;
         }
-        .aside__button, hidden-burger {
-            display: inline-flex;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-image: url("../img/burger--hidden.svg");
-            position: relative;
-            border: none;
-            padding: 0;
-            z-index: 0;
-            margin-top: 24px;
-            margin-left: 24px;
-        }
+        
         .search-PC:before{
             position: absolute;
             content: "";
@@ -243,6 +233,9 @@
         .lang:visited{
                 background-color: #7E7E82;
             }
+    }
+    .aside.active{
+        left: 0vw;
     }
 }
 @media screen and (min-width: 1440px){
@@ -280,9 +273,7 @@
             margin-left: 194px;
             margin-top: 23px;
         }
-        .aside__button, hidden-burger{
-            display: none;
-        }
+        
         .search-PC:before{
             position: absolute;
             content: "";
