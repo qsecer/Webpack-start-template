@@ -26,6 +26,9 @@ body{
     position: relative;
     z-index: 20;
 }
+.button-burger.active{
+    background-image: url("../img/burger--hidden.svg");
+}
 .Group{
     display: inline-flex;
     width: 97px;

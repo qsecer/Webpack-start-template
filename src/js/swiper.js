@@ -11,8 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             pagination: {
                 el: '.swiper-pagination',
-                clickable: true,
-            },
+                clickable: true},
             slidesPerView: 1.2,
             spaceBetween: 16,
         });
