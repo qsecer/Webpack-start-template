@@ -1,4 +1,7 @@
 import Swiper from 'swiper';
+const button = document.querySelector(['.brand-table-button']);
+const hiddenItems  = document.getElementsByClassName('brand-table-item');
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const width = window.innerWidth
@@ -18,10 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         }
-    if(width >=768 && width < 1119){
-        const button = document.querySelector(['.brand-table-button']);
-        const hiddenItems  = document.getElementsByClassName('brand-table-item');
-        console.log(hiddenItems)
+    if(width >=768 && width < 1439){
+        
         button.addEventListener('click', ()=>{
             let classOfButton = button.classList;
             if(classOfButton[1] === 'show-more'){
@@ -41,10 +42,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         })
     }
-    if(width >=1120){
-        const button = document.querySelector(['.brand-table-button']);
-        const hiddenItems  = document.getElementsByClassName('brand-table-item');
-        console.log(hiddenItems)
+    if(width >=1440){
+        
         button.addEventListener('click', ()=>{
             let classOfButton = button.classList;
             if(classOfButton[1] === 'show-more'){
