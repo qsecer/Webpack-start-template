@@ -44,7 +44,7 @@
     </aside>
     <div class="modal-call">
         <button type="button" class="modal-call__btn"></button>
-        <h2>Заказать звонок</h2>
+        <h2 class="modal-call__h2">Заказать звонок</h2>
         <form action="/">
             <input type="phone" placeholder="Телефон">
             <p class="privacy-polity">
@@ -52,6 +52,21 @@
                      политикой конфиденциальности</a>
             </p>
             <button class="modal-call__submit">Оправить ></button>
+        </form>
+    </div>
+    <div class="modal-feedback">
+        <button type="button" class="modal-feedback__btn"></button>
+        <h2 class="modal-feedback__h2">Заказать звонок</h2>
+        <form action="/">
+            <input type="phone" placeholder="Имя">
+            <input type="phone" placeholder="Телефон">
+            <input type="phone" placeholder="Электронная почта">
+            <input type="phone" placeholder="Сообщение">
+            <p class="privacy-polity">
+                Нажимая “отправить”, вы даете согласие на <a class="privacy-policy__link"  href="#">обработку персональных данных</a> и соглашаетесь с нашей<a class="privacy-policy__link" href="#">
+                     политикой конфиденциальности</a>
+            </p>
+            <button class="modal-feedback__submit">Оправить ></button>
         </form>
     </div>
 
@@ -70,10 +85,7 @@
       </div>
   </header>
 
-  
-
-
-  <main class="main">
+   <main class="main">
       <h1 class="main__h1">Услуги и сервисы</h1>
      <nav class="nav">
          <ul class ="nav__list">
@@ -177,6 +189,7 @@
     <button class="view-table__button show-more">Показать больше</button>
 
     <h2 class="third-swiper">Цены на услуги</h2>
+
     <div class="swiper" id="swiper">
 
         <div class="swiper-wrapper">

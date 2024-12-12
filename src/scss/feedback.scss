@@ -1,5 +1,5 @@
 
-.modal-call__h2::before{
+.modal-feedback__h2::before{
     content: " ";
     width: 4px;
     height: 40px;
@@ -9,7 +9,7 @@
     top: 78px;
     border-radius: 2px;
 }
-.modal-call{
+.modal-feedback{
     position: absolute;
     background-color: white;
     display: flex;
@@ -29,7 +29,7 @@
     right:-100vw;
     
 
-    .modal-call__btn{
+    .modal-feedback__btn{
         width: 40px;
         height: 40px;
         border: none;
@@ -45,8 +45,12 @@
         height: 44px;
         padding-left: 16px;
         border: 2px solid #EAEAEA;
+        margin: 8px;
     }
-    .modal-call__submit{
+    input:last-of-type{
+        height: 132px;
+    }
+    .modal-feedback__submit{
         width: 136px;
         height: 32px;
         border-radius: 16px;
@@ -63,7 +67,7 @@
         color:#FF3E79
     }
 }
-.modal-call.active{
+.modal-feedback.active{
     
         visibility: visible;
         right: 0vw; 

@@ -16,16 +16,15 @@
     .swiper-wrapper{
         display: -webkit-box;
     }
-    .swiper-slide, swiper-slide-active{
+    .swiper-slide{
         display: flex;
         justify-content: space-between;
-        width: 240px;
+        
         height: 72px;
         background-color: white;
         border-radius: 10px;
-
     }
-    swiper:after{
+    swiper::after{
         content: "";
         position: absolute;
         width: 24px;

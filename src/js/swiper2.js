@@ -4,20 +4,8 @@ const width = window.innerWidth;
 
 document.addEventListener('DOMContentLoaded', () => {
     const width = window.innerWidth
-    if(width < 767){
-        new Swiper('.swiper', {
-
-            direction: 'horizontal',
-            loop: true,
-
-
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true},
-            slidesPerView: 1.2,
-            spaceBetween: 16,
-    })}
     
+
     if(width >=768 && width < 1439){
         
         viewBtn.addEventListener('click', ()=>{
