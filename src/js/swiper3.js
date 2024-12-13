@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let classOfButton = viewBtn.classList;
             if(classOfButton[1] === 'show-more'){
                 for(let i = 6; i < hiddenItems.length; i++){
-                    hiddenItems[i].style.display = 'flex';
+                    hiddenItems[i].style.display = 'grid';
                     viewBtn.classList.add('hide');
                     viewBtn.classList.remove('show-more');
                     viewBtn.textContent = 'Скрыть';
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let classOfButton = viewBtn.classList;
             if(classOfButton[1] === 'show-more'){
                 for(let i = 8; i < hiddenItems.length; i++){
-                    hiddenItems[i].style.display = 'flex';
+                    hiddenItems[i].style.display = 'grid';
                     viewBtn.classList.add('hide');
                     viewBtn.classList.remove('show-more');
                     viewBtn.textContent = 'Скрыть';

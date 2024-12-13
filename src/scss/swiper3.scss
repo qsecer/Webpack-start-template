@@ -20,22 +20,43 @@
         display: none;
     }
     .order-table{
-        display: grid;
-        grid-template-columns: repeat(3, 224px);
-        gap: 16px 24px ;
-        margin: 24px;
+        display: flex;
+        flex-direction: column;
     }
-    .order-table__item:not(:nth-child(-n + 6)){
+    .order-table__ul{
+        width: 720px;
+        display: grid;
+        grid-template-rows: 64px 64px 64px 64px 64px;
+        gap: 1px ;
+        padding-inline-start: 0;
+        margin: 0;
+    }
+    .third-swiper{
+        margin: 0;
+        margin-bottom: 31px;
+        padding: 16px;
+        padding-left: 24px;
+    }
+    .order-table__item:not(:nth-child(-n + 5)){
         display: none;
     }
     .order-table__item{
-        display: flex;
+        display: grid;
+        grid-template-columns: 372px 96px 101px 119px;
         align-items: center;
-        justify-content: space-between;
-        width: 224px;
-        height: 160px;
+        padding: 0 16px;
         background-color: white;
-        border-radius: 10px;
+        
+    }
+    .h3__item{
+        margin: 0;
+    }
+    .order-table__h3{
+        display: grid;
+        grid-template-columns: 372px 96px 101px;
+        padding-left: 16px;
+        padding-right: 16px;
+        
     }
     
     .order-table__button {
@@ -86,6 +107,7 @@
     
     
         }
+        
         .order-table__item {
             display: flex;
             align-items: center;

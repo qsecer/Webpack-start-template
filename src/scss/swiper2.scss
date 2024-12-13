@@ -19,11 +19,15 @@
     .swiper{
         display: none;
     }
-    .view-table{
+    .view-table__wrapper{
         display: grid;
         grid-template-columns: repeat(3, 224px);
         gap: 16px 24px ;
-        margin: 24px;
+        padding-bottom: 31px;
+        margin: 1px solid #41F6D7;
+    }
+    .view-table{
+        padding-bottom: 31px;
     }
     .view-table__h2{
         font-size: 16px;
@@ -100,7 +104,6 @@
         }
         .view-table__item {
             display: flex;
-            align-items: center;
             justify-content: space-between;
             width: 240px;
             height: 160px;
@@ -112,8 +115,8 @@
         .view-table__h2{
             font-size: 16px;
             position: absolute;
-            top: 0;
-            margin: 0;
+            top: 16;
+            margin: 16;
         }
         .view-table-go{
             bottom: 16px;
