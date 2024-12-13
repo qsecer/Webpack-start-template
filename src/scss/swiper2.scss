@@ -25,10 +25,16 @@
         gap: 16px 24px ;
         margin: 24px;
     }
+    .view-table__h2{
+        font-size: 16px;
+        position: absolute;
+        top: 0;
+    }
     .view-table__item:not(:nth-child(-n + 6)){
         display: none;
     }
     .view-table__item{
+        box-sizing: border-box;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -36,11 +42,13 @@
         height: 160px;
         background-color: white;
         border-radius: 10px;
+        padding: 16px;
+        position: relative;
     }
     .view-table-go{
-        margin: 16px;
         bottom: 16px;
         right: 16px;
+        position: absolute;
     }
     .view-table__button {
         display: flex;
@@ -98,11 +106,19 @@
             height: 160px;
             background-color: white;
             border-radius: 10px;
+            position: relative;
     
         }
-        
-        .brand-table-go{
-            margin: 16px;
+        .view-table__h2{
+            font-size: 16px;
+            position: absolute;
+            top: 0;
+            margin: 0;
+        }
+        .view-table-go{
+            bottom: 16px;
+            right: 16px;
+            position: absolute;
         }
         .view-table__button{
             border: 0;
@@ -112,7 +128,7 @@
             cursor: pointer;
         }
     
-        .view-table__item:not(:nth-child(-n + 8)){
+        .view-table__item:not(:nth-child(-n + 4)){
             display: none;
         }
         .view-table__button {

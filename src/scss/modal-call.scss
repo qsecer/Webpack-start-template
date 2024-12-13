@@ -6,13 +6,13 @@
     background-color: aqua;
     position: absolute;
     left: 0;
-    top: 78px;
+    top: 36px;
     border-radius: 2px;
 }
 .modal-call{
     position: absolute;
     background-color: white;
-    display: flex;
+    display: none;
     flex-direction: column;
     width: 100%;
     max-width: 360px;
@@ -24,9 +24,11 @@
     padding-top: 24px;
     padding-left: 16px;
     padding-right: 16px;
-    display: none;
+    
     box-shadow: -8px 7px 8px 0px rgba(14, 24, 80, .2);
     right:-100vw;
+    transition: all .7s ease;
+    z-index: 500;
     
 
     .modal-call__btn{
@@ -35,6 +37,9 @@
         border: none;
         border-radius: 50%;
         background-image: url("../img/burger--hidden.svg");
+        position: absolute;
+        left: -65px;
+        top: 36px;
         
     }
 
@@ -64,8 +69,7 @@
     }
 }
 .modal-call.active{
-    
-        visibility: visible;
         right: 0vw; 
-    
+        display: block;
+        
 }

@@ -310,8 +310,10 @@ hr{
         }
     }
     main{
-        margin-right: 15px;
         background-color: white;
+        max-width: 767px;
+        margin-left: auto;
+        margin-right: auto;
         .nav__list{
             color: transparent;
             padding-inline-start: 24px;
@@ -325,10 +327,11 @@ hr{
         }
         .main__h1::before {
             content: "";
-            width: 4px;
             height: 40px;
             background-color: aqua;
             padding-left: 5px;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
             position: absolute;
             left: -27px;
             border-radius: 10px;
@@ -445,7 +448,7 @@ hr{
             background-color: aqua;
             padding-left: 5px;
             position: absolute;
-            left: -46px;
+            left: -42px;
             border-top-right-radius: 25px;
             border-bottom-right-radius: 25px;
             top: 5px;

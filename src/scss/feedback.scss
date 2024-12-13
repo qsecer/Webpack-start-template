@@ -1,75 +1,162 @@
-
-.modal-feedback__h2::before{
-    content: " ";
-    width: 4px;
-    height: 40px;
-    background-color: aqua;
-    position: absolute;
-    left: 0;
-    top: 78px;
-    border-radius: 2px;
-}
-.modal-feedback{
-    position: absolute;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 360px;
-    height: 676px;
-    top: 0;
-    right: 0;
-    z-index: 30;
-    box-sizing: border-box;
-    padding-top: 24px;
-    padding-left: 16px;
-    padding-right: 16px;
-    display: none;
-    box-shadow: -8px 7px 8px 0px rgba(14, 24, 80, .2);
-    right:-100vw;
-    
-
-    .modal-feedback__btn{
-        width: 40px;
+@media screen and (max-width: 767px){
+    .modal-feedback__h2::before{
+        content: " ";
+        width: 4px;
         height: 40px;
-        border: none;
-        border-radius: 50%;
-        background-image: url("../img/burger--hidden.svg");
-        
+        background-color: aqua;
+        position: absolute;
+        left: 0;
+        top: 78px;
+        border-radius: 2px;
     }
-
-    input{
-        box-sizing: border-box;
-        border-radius: 8px;
+    .modal-feedback{
+        position: absolute;
+        background-color: white;
+        flex-direction: column;
         width: 100%;
-        height: 44px;
+        max-width: 360px;
+        height: 676px;
+        top: 0;
+        right: 0;
+        z-index: 30;
+        box-sizing: border-box;
+        padding-top: 24px;
         padding-left: 16px;
-        border: 2px solid #EAEAEA;
-        margin: 8px;
+        padding-right: 16px;
+        display: none;
+        box-shadow: -8px 7px 8px 0px rgba(14, 24, 80, .2);
+        right:-100vw;
+        transition: all .7s ease;
+        
+    
+        .modal-feedback__btn{
+            width: 40px;
+            height: 40px;
+            border: none;
+            border-radius: 50%;
+            background-image: url("../img/burger--hidden.svg");
+            
+        }
+    
+        input{
+            box-sizing: border-box;
+            border-radius: 8px;
+            width: 100%;
+            height: 44px;
+            padding-left: 16px;
+            border: 2px solid #EAEAEA;
+            margin: 8px;
+            margin-left: 0;
+        }
+        input:last-of-type{
+            height: 132px;
+        }
+        .modal-feedback__submit{
+            width: 136px;
+            height: 32px;
+            border-radius: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #FF3E79;
+            color:white;
+            border: 0;
+            padding: 0;
+        }
+        .privacy-policy__link{
+            text-decoration: none;
+            color:#FF3E79
+        }
     }
-    input:last-of-type{
-        height: 132px;
-    }
-    .modal-feedback__submit{
-        width: 136px;
-        height: 32px;
-        border-radius: 16px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #FF3E79;
-        color:white;
-        border: 0;
-        padding: 0;
-    }
-    .privacy-policy__link{
-        text-decoration: none;
-        color:#FF3E79
+    .modal-feedback.active{
+        
+            display: block;
+            right: 0vw; 
+            transition: all .7s ease;
     }
 }
-.modal-feedback.active{
+@media screen and (min-width: 768px){
+    .modal-feedback__h2::before{
+        content: " ";
+        width: 4px;
+        height: 40px;
+        background-color: aqua;
+        position: absolute;
+        left: 0;
+        top: 36px;
+        border-radius: 2px;
+    }
+    .modal-feedback{
+        position: absolute;
+        background-color: white;
+        flex-direction: column;
+        width: 100%;
+        max-width: 360px;
+        height: 676px;
+        top: 0;
+        right: 0;
+        z-index: 30;
+        box-sizing: border-box;
+        padding-top: 24px;
+        padding-left: 32px;
+        padding-right: 32px;
+        display: none;
+        box-shadow: -8px 7px 8px 0px rgba(14, 24, 80, .2);
+        right:-100vw;
+        transition: all .7s ease;
+        
     
-        visibility: visible;
-        right: 0vw; 
+        .modal-feedback__btn{
+            width: 40px;
+            height: 40px;
+            border: none;
+            border-radius: 50%;
+            background-image: url("../img/burger--hidden.svg");
+            position: absolute;
+            left: -65px;
+            top: 36px;
+            
+            
+        }
     
+        input{
+            box-sizing: border-box;
+            border-radius: 8px;
+            width: 100%;
+            height: 44px;
+            padding-left: 16px;
+            border: 2px solid #EAEAEA;
+            margin: 8px;
+            margin-left: 0;
+        }
+        input:last-of-type{
+            height: 132px;
+        }
+        .modal-feedback__submit{
+            width: 136px;
+            height: 32px;
+            border-radius: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #FF3E79;
+            color:white;
+            border: 0;
+            padding: 0;
+        }
+        .privacy-policy__link{
+            text-decoration: none;
+            color:#FF3E79
+        }
+    }
+    .modal-feedback.active{
+        
+            display: block;
+            right: 0vw; 
+            transition: all .7s ease;
+    }
 }
+
+
+
+
