@@ -34,7 +34,7 @@
         position: absolute;
         top: 0;
     }
-    .view-table__item:not(:nth-child(-n + 6)){
+    .view-table__item:not(:nth-child(-n + 3)){
         display: none;
     }
     .view-table__item{
@@ -93,7 +93,7 @@
         h2{
             margin-left: 32px;
         }
-        .view-table {
+        .view-table__wrapper {
             display: grid;
             grid-template-columns: repeat(4, 240px);
             gap: 16px 24px;

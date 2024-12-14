@@ -98,28 +98,31 @@
         h2{
             margin-left: 32px;
         }
-        .order-table {
+        .order-table__ul{
+            width: 720px;
             display: grid;
-            grid-template-columns: repeat(4, 240px);
-            gap: 16px 24px;
-            margin-bottom: 24px;
-            margin-left: 32px;
-    
-    
+            grid-template-rows: 64px 64px 64px 64px 64px;
+            gap: 1px ;
+            padding-inline-start: 0;
+            margin: 0;
         }
         
         .order-table__item {
-            display: flex;
+            display: grid;
+            grid-template-columns: 470px 127px 101px 119px;
             align-items: center;
-            justify-content: space-between;
-            width: 240px;
-            height: 160px;
+            padding: 0 16px;
             background-color: white;
-            border-radius: 10px;
-    
+        
         }
         
-        
+        .order-table__h3{
+            display: grid;
+            grid-template-columns: 470px 127px 101px;
+            padding-left: 16px;
+            padding-right: 16px;
+            
+        }
         .order-table__button{
             border: 0;
             padding: 0;
