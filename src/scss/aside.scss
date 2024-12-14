@@ -1,3 +1,7 @@
+$background: #F8F8F8;
+$w: #ffffff;
+$psevdo: #41F6D7;
+$gg: #7E7E82;
 
 @media (min-width:320px) and (max-width: 767px) {
     .aside{
@@ -6,16 +10,21 @@
         box-sizing: border-box;
         background-color: white;
         width: 320px;
-        height: 100vh;
+        height: 100%;
         font-family: inherit;
         position: absolute;
         z-index: 10;
         left: -100vw;
+        padding: 16px 24px 32px 24px;
         transition: all .7s ease;
+
         .aside__cap{
             display: flex;
-            flex-direction: row-reverse;
             justify-content: flex-start;
+            justify-content: space-between;
+        }
+        .aside__img{
+            margin-left: 72.73px;
         }
         .aside__basement{
             margin-left: 24px;
@@ -24,7 +33,7 @@
         }
         .aside__link{
             text-decoration: none;
-            color: #7E7E82;
+            color: $gg;
         }
         .search-PC{
             display: inline-flex;
@@ -36,20 +45,10 @@
             border: none;
             padding: 0;
             z-index: 0;
-            margin-right: 16px;
-            margin-top: 23px;
+            margin-top: 8px;
         }
         
-        .search-PC:before{
-            position: absolute;
-            content: "";
-            background-image: url("../img/Group.svg");
-            width: 97px;
-            height: 51px;
-            z-index: 1;
-            right: 129px;
-            top: -4px;
-        }
+        
         .aside__list{
             margin-top: 20px;
             margin-left: 24px;
@@ -61,7 +60,7 @@
             border-radius: 50%;
             background-image: url("../img/call.svg");
             border: none;
-            margin-right: 16px;
+            margin-right: 8px;
         }
         .chat-PC{
             width: 40px;
@@ -69,7 +68,7 @@
             border-radius: 50%;
             background-image: url("../img/chat.svg");
             border: none;
-            margin-right: 16px;
+            
     
         }
         .profile-PC{
@@ -78,11 +77,12 @@
             border-radius: 50%;
             background-image: url("../img/profile.svg");
             border: none;
+            margin-left: 8px;
     
         }
         .aside__item{
             text-decoration: none;
-            color: #7E7E82;
+            color: $gg;
             list-style: none;
             margin-bottom: 32px;
             margin-right: 75px;
@@ -92,7 +92,7 @@
         .aside__item:hover::before{
             content: "";
             position: absolute;
-            background-color: #41F6D7;
+            background-color: $psevdo;
             height: 32px;
             width: 4px;
             top: -8px;
@@ -110,7 +110,7 @@
         }
     
         .lang:visited{
-                background-color: #7E7E82;
+                background-color: $gg;
             }
     }
     .aside.active{
@@ -124,18 +124,18 @@
         
         flex-direction: column;
         box-sizing: border-box;
-        background-color: white;
+        background-color: $w;
         width: 320px;
-        height: 100vh;
+        height: 100%;
         font-family: inherit;
         position: absolute;
         left: -100vw;
         z-index: 10;
         transition: all .7s ease;
+
         .aside__cap{
             display: flex;
-            flex-direction: row-reverse;
-            justify-content: flex-start;
+            justify-content: space-between;
         }
     
     
@@ -146,7 +146,7 @@
         }
         .aside__link{
             text-decoration: none;
-            color: #7E7E82;
+            color: $gg;
         }
         .search-PC{
             display: inline-flex;
@@ -158,20 +158,15 @@
             border: none;
             padding: 0;
             z-index: 0;
-            margin-left: 194px;
-            margin-top: 23px;
+            margin-top: 24px;
+            margin-right: 24px;
+        }
+        .aside__img{
+            margin-left: 72px;
+            margin-top: 16px;
         }
         
-        .search-PC:before{
-            position: absolute;
-            content: "";
-            background-image: url("../img/Group.svg");
-            width: 97px;
-            height: 51px;
-            z-index: 1;
-            right: 129px;
-            top: -4px;
-        }
+        
         .aside__list{
             margin-top: 20px;
             margin-left: 24px;
@@ -204,7 +199,7 @@
         }
         .aside__item{
             text-decoration: none;
-            color: #7E7E82;
+            color: $gg;
             list-style: none;
             margin-bottom: 32px;
             margin-right: 75px;
@@ -214,7 +209,7 @@
         .aside__item:hover::before{
             content: "";
             position: absolute;
-            background-color: #41F6D7;
+            background-color: $psevdo;
             height: 32px;
             width: 4px;
             top: -8px;
@@ -232,7 +227,7 @@
         }
     
         .lang:visited{
-                background-color: #7E7E82;
+                background-color: $psevdo;
             }
     }
     .aside.active{
@@ -241,25 +236,29 @@
 }
 @media screen and (min-width: 1440px){
     .aside{
-    
+        
         flex-direction: column;
         box-sizing: border-box;
-        background-color: white;
+        background-color: $w;
         width: 320px;
-        height: 100vh;
+        height: inherit;
         font-family: inherit;
+        padding: 33px 29px 0px 24px;
         
-        
-    
-    
-        .aside__basement{
-            margin-left: 24px;
-            position: absolute;
-            bottom: 32px;
+        .aside__cap{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-content: center;
+            align-items: baseline;  
+            margin-bottom: 37px;
         }
+    
+    
+        
         .aside__link{
             text-decoration: none;
-            color: #7E7E82;
+            color: $gg;
         }
         .search-PC{
             display: inline-flex;
@@ -271,24 +270,13 @@
             border: none;
             padding: 0;
             z-index: 0;
-            margin-left: 194px;
-            margin-top: 23px;
+            
         }
         
-        .search-PC:before{
-            position: absolute;
-            content: "";
-            background-image: url("../img/Group.svg");
-            width: 97px;
-            height: 51px;
-            z-index: 1;
-            right: 129px;
-            top: -4px;
-        }
         .aside__list{
-            margin-top: 20px;
-            margin-left: 24px;
             padding: 0px;
+            margin: 0px;
+            margin-bottom: 241px;
         }
         .call-PC{
             width: 40px;
@@ -317,7 +305,7 @@
         }
         .aside__item{
             text-decoration: none;
-            color: #7E7E82;
+            color: $gg;
             list-style: none;
             margin-bottom: 32px;
             margin-right: 75px;
@@ -327,7 +315,7 @@
         .aside__item:hover::before{
             content: "";
             position: absolute;
-            background-color: #41F6D7;
+            background-color: $psevdo;
             height: 32px;
             width: 4px;
             top: -8px;
@@ -345,7 +333,7 @@
         }
     
         .lang:visited{
-                background-color: #7E7E82;
+                background-color: $gg;
             }
     }
 }

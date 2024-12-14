@@ -1,9 +1,18 @@
+$background: #F8F8F8;
+$w: #ffffff;
+$psevdo: #41F6D7;
+$color-link: #FF3E79;
+
 @media (min-width: 320px) and (max-width: 767px) {
     .order-table{
         display: none;
     }
     .order-table__button{
         display: none;
+    }
+    h2{
+        margin-left: 32px;
+        text-transform: uppercase;
     }
 }
 @media (min-width: 768px) and (max-width: 1439px) {
@@ -22,6 +31,7 @@
     .order-table{
         display: flex;
         flex-direction: column;
+        padding-left: 24px;
     }
     .order-table__ul{
         width: 720px;
@@ -30,6 +40,7 @@
         gap: 1px ;
         padding-inline-start: 0;
         margin: 0;
+        justify-content: space-evenly; 
     }
     .third-swiper{
         margin: 0;
@@ -97,10 +108,18 @@
         }
         h2{
             margin-left: 32px;
+            
+        }
+        .order-table{
+            display: flex;
+            flex-direction: column;
+            padding-left: 34px;
+            
         }
         .order-table__ul{
             width: 720px;
             display: grid;
+            justify-content: space-evenly;
             grid-template-rows: 64px 64px 64px 64px 64px;
             gap: 1px ;
             padding-inline-start: 0;
@@ -109,16 +128,16 @@
         
         .order-table__item {
             display: grid;
-            grid-template-columns: 470px 127px 101px 119px;
+            grid-template-columns: 470px 227px 192px 119px;
             align-items: center;
             padding: 0 16px;
-            background-color: white;
+            background-color: $w;
         
         }
         
         .order-table__h3{
             display: grid;
-            grid-template-columns: 470px 127px 101px;
+            grid-template-columns: 470px 227px 192px;
             padding-left: 16px;
             padding-right: 16px;
             
@@ -130,19 +149,4 @@
             background-color: transparent;
             cursor: pointer;
         }
-    
-        .order-table__item:not(:nth-child(-n + 8)){
-            display: none;
-        }
-        .order-table__button {
-            display: flex;
-            position: relative;
-            align-items: center;
-            border: 0px;
-            padding: 0;
-            background: transparent;
-            margin-left: 57px;
-    
-        }
-        
     }

@@ -1,9 +1,13 @@
+$background: #F8F8F8;
+$w: #ffffff;
+$psevdo: #41F6D7;
+$color-link: #FF3E79;
 
 .modal-call__h2::before{
     content: " ";
     width: 4px;
     height: 40px;
-    background-color: aqua;
+    background-color: $psevdo;
     position: absolute;
     left: 0;
     top: 36px;
@@ -11,7 +15,7 @@
 }
 .modal-call{
     position: absolute;
-    background-color: white;
+    background-color: $w;
     display: none;
     flex-direction: column;
     width: 100%;
@@ -58,14 +62,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #FF3E79;
-        color:white;
+        background-color: $color-link;
+        color:$w;
         border: 0;
         padding: 0;
     }
     .privacy-policy__link{
         text-decoration: none;
-        color:#FF3E79
+        color:$color-link;
     }
 }
 .modal-call.active{

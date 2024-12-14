@@ -1,4 +1,7 @@
 import Swiper from 'swiper';
+
+
+
 const button = document.querySelector(['.brand-table-button']);
 const hiddenItems  = document.getElementsByClassName('brand-table-item');
 
@@ -7,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const width = window.innerWidth
     if (width < 767){
         new Swiper('.swiper', {
-
             direction: 'horizontal',
             loop: true,
 
