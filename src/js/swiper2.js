@@ -1,6 +1,6 @@
 const viewBtn = document.querySelector('.view-table__button');
 const hiddenItems = document.getElementsByClassName('view-table__item');
-const width = window.innerWidth;
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const width = window.innerWidth
