@@ -9,6 +9,23 @@ $color-link: #FF3E79;
     .view-table__button{
         display: none;
     }
+    .swiper-view{
+        height: 160px;
+        box-sizing: border-box;
+        padding: 16px;
+    }
+    .swiper-go{
+        height:40px;
+        width: 40px;
+        margin-top: 84px;
+
+    }
+    .second-swiper{
+        padding: 16px;
+        padding-left: 24px;
+        margin: 0;
+        margin-bottom: 24px;
+    }
 }
 @media (min-width: 768px) and (max-width: 1439px) {
     
@@ -96,9 +113,12 @@ $color-link: #FF3E79;
         .swiper{
             display: none;
         }
-        h2{
-            margin-left: 32px;
+        .second-swiper{
+            margin: 0;
+            padding: 16px;
+            margin-bottom: 24px;
         }
+        
         .view-table__wrapper {
             display: grid;
             grid-template-columns: repeat(4, 240px);
@@ -151,5 +171,6 @@ $color-link: #FF3E79;
             margin-left: 57px;
     
         }
+
         
     }

@@ -17,3 +17,16 @@
         width: 213px;
     }
 }
+ @media screen and (min-width: 1440px){
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .footer__p3{
+        width: 213px;
+    }
+ }

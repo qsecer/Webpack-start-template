@@ -2,7 +2,7 @@
 $background: #F8F8F8;
 $w: #ffffff;
 $psevdo: #41F6D7;
-$bullet: #B5B6BC;
+$bullet: #DDDDDD;
 
 .brand-table-button{
     font-family: inherit
@@ -13,32 +13,33 @@ $bullet: #B5B6BC;
     
     .swiper {
         width: 100%;
-        height: 140px;
         margin-left: 16px;
         overflow: hidden;
     }
+    
     .swiper-wrapper{
         display: -webkit-box;
     }
     .swiper-slide{
         display: flex;
         justify-content: space-between;
-        
         height: 72px;
         background-color: $w;
         border-radius: 10px;
     }
-    .swiper::after{
-        content: "";
-        position: absolute;
-        width: 24px;
-        height: 81px;
-        background-image: linear-gradient($background 0.1%, $w 100%);
+    
+    .swiper-pagination{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
     }
     .swiper-pagination-bullet{
+        display: block;
         width: 12px;
         height: 12px;
         background-color: $bullet;
+        border-radius: 50%;
+        margin: 6px;
     }
     .swiper-image{
         margin-bottom: auto;

@@ -1,4 +1,6 @@
 import Swiper from 'swiper';
+import { Pagination } from 'swiper/modules';
+let pagination  = document.querySelector('.swiper-pagination');
 
 
 
@@ -10,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const width = window.innerWidth
     if (width < 767){
         new Swiper('.swiper', {
+            modules: [Pagination], 
             direction: 'horizontal',
             loop: true,
 

@@ -3,6 +3,7 @@ $background: #F8F8F8;
 $w: #ffffff;
 $psevdo: #41F6D7;
 $pp: #EAEAEA;
+$link-color: #7E7E82;
 body{
     background-color: $background;
     margin: 0;
@@ -253,6 +254,7 @@ hr{
         max-width: 526px;
         border-radius: 10px;
     }
+    
     .main__text{
         margin-left: 16px;
         margin-right: 16px;
@@ -260,7 +262,6 @@ hr{
             display: none;
          }
          
-
         .main__button{
             padding: 0;
             border: 0;
@@ -338,7 +339,7 @@ hr{
             color: transparent;
             padding-inline-start: 24px;
         }
-
+        
         .main__h1{
             display: flex;
             position: relative;
@@ -444,7 +445,6 @@ hr{
         box-sizing: border-box;
         flex-wrap: nowrap;
         flex-direction: column;
-        position: relative;
         padding: 10px;
         margin: 0px;
         top: 42px;
@@ -459,6 +459,13 @@ hr{
             flex-direction: row;
             flex-wrap: nowrap;
             box-sizing: border-box;
+
+        }
+        .main__h2{
+            margin: 0;
+            padding: 16px;
+            margin-bottom: 24px;
+
 
         }
 
@@ -477,7 +484,7 @@ hr{
 
         .main__section{
             display: flex;
-            // position: relative;
+            padding-bottom: 32px;
 
 
             .main__text{

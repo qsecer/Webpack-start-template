@@ -2,10 +2,14 @@ $background: #F8F8F8;
 $w: #ffffff;
 $psevdo: #41F6D7;
 $color-link: #FF3E79;
+$link-color: #7E7E82;
 
 @media (min-width: 320px) and (max-width: 767px) {
     .order-table{
         display: none;
+    }
+    .order-table__link{
+        display: block;
     }
     .order-table__button{
         display: none;
@@ -13,6 +17,35 @@ $color-link: #FF3E79;
     h2{
         margin-left: 32px;
         text-transform: uppercase;
+    }
+    .swiper-order{
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        position: relative;
+        box-sizing: border-box;
+        padding: 16px;
+    }
+    .swiper-order>p{
+        margin: 0;
+    }
+    .swiper__img{
+        height: 32px;
+        width: 119px;
+        position: absolute;
+        bottom: 16px;
+        right: 16px;
+    }
+    .third-swiper{
+        margin: 0;
+        margin-bottom: 31px;
+        padding: 16px;
+        padding-left: 24px;
+    }
+    .serv-swiper{
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 @media (min-width: 768px) and (max-width: 1439px) {
@@ -100,15 +133,32 @@ $color-link: #FF3E79;
          bottom: -4px;
          transform: rotate(180deg);
      }
+     .order-table__link{
+        text-decoration: none;
+        color: $link-color;
+        position: relative;
+    }
+    .order-table__link::after{
+        position: absolute;
+        content: "";
+        width: 24px;
+        height: 24px;
+        background-image: url("../img/more.svg");
+        bottom: -3;
+    }
     
     }
-    @media screen and (min-width: 1440px) {
+
+
+@media screen and (min-width: 1440px) {
         .swiper{
             display: none;
         }
-        h2{
-            margin-left: 32px;
-            
+        .third-swiper{
+            margin: 0;
+            padding: 16px;
+            margin-bottom: 31px;
+
         }
         .order-table{
             display: flex;
@@ -140,6 +190,7 @@ $color-link: #FF3E79;
             grid-template-columns: 470px 227px 192px;
             padding-left: 16px;
             padding-right: 16px;
+            margin: 0;
             
         }
         .order-table__button{
@@ -149,4 +200,21 @@ $color-link: #FF3E79;
             background-color: transparent;
             cursor: pointer;
         }
+        .order-table__p{
+            width: 421px;
+        }
+        .order-table__link{
+            text-decoration: none;
+            color: $link-color;
+            position: relative;
+        }
+        .order-table__link::after{
+            position: absolute;
+            content: "";
+            width: 24px;
+            height: 24px;
+            background-image: url("../img/more.svg");
+            bottom: -4;
+        }
+
     }
