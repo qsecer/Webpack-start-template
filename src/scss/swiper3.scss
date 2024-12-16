@@ -3,7 +3,9 @@ $w: #ffffff;
 $psevdo: #41F6D7;
 $color-link: #FF3E79;
 $link-color: #7E7E82;
-
+h3{
+    color: $link-color;
+}
 @media (min-width: 320px) and (max-width: 767px) {
     .order-table{
         display: none;
@@ -47,6 +49,9 @@ $link-color: #7E7E82;
         display: flex;
         flex-wrap: wrap;
         color: $link-color;
+    }
+    .serv-swiper-b{
+        margin-bottom: 16px;
     }
 }
 @media (min-width: 768px) and (max-width: 1439px) {

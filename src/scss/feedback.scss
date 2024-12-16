@@ -4,6 +4,12 @@ $psevdo: #41F6D7;
 $gg: #7E7E82;
 $rr: #EAEAEA;
 $link-color: #FF3E79;
+$black: #1B1C21;
+
+.modal-feedback__h2{
+    color: $black;
+    font-size: 24px;
+}
 
 @media screen and (max-width: 767px){
     .modal-feedback__h2::before{

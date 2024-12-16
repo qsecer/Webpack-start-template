@@ -19,6 +19,7 @@ $bullet: #DDDDDD;
     
     .swiper-wrapper{
         display: -webkit-box;
+        padding-bottom: 16px;
     }
     .swiper-slide{
         display: flex;
@@ -32,6 +33,7 @@ $bullet: #DDDDDD;
         display: flex;
         justify-content: center;
         flex-direction: row;
+        padding-bottom: 16px;
     }
     .swiper-pagination-bullet{
         display: block;
