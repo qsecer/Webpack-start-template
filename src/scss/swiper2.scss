@@ -55,6 +55,7 @@ $color-link: #FF3E79;
         font-size: 16px;
         position: absolute;
         top: 0;
+        background: $w;
         
     }
     .view-table__item:not(:nth-child(-n + 3)){
