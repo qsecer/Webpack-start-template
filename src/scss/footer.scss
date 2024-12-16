@@ -40,6 +40,34 @@ $link-color: #FF3E79;
  }
 }
 @media screen and (min-width: 768px) and (max-width: 1439px){
+    .footer__second{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer__p1{
+        margin-bottom: 0;
+    }
+    .footer__p2{
+        margin-top: 0;
+    }
+    .footer__p4{
+        width: 33%;
+    }
 }
  @media screen and (min-width: 1440px){
+    .footer__second{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer__p4{
+        width: 33%;
+    }
+    .footer__p1{
+        margin-bottom: 0;
+    }
+    .footer__p2{
+        margin-top: 0;
+    }
  }

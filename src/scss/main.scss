@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'TTLakes';
+    src: url(../fonts/TTLakes/TTLakes-Light.ttf);
+}
+
+
 /*стили кнопок  и общие стили*/
 $background: #F8F8F8;
 $w: #ffffff;
@@ -8,16 +14,25 @@ body{
     background-color: $background;
     margin: 0;
     font-family: 'TTLakes';
+    font-size: 16;
     margin: auto;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.page-container{
+    box-sizing: border-box;
 }
 h2{
     background: linear-gradient(90deg, $background 1.39%, $w 100%);
+    color: $link-color;
+    font-size: 16px;
 }
 .main{
     background-color: transparent;
     padding-top: 24px;
     z-index: 1;
     height: 100%;
+    box-sizing: border-box;
 }
 
 
@@ -261,7 +276,21 @@ hr{
         .parag--hidden-on-phone {
             display: none;
          }
-         
+         .parag--hidden-on-tablet{
+            display: none;
+         }
+         .parag--hidden-on-PC{
+            display: none;
+         }
+         .parag--hidden-on-phone.active{
+            display: inline;
+         }
+         .parag--hidden-on-tablet.active{
+            display: inline;
+         }
+         .parag--hidden-on-PC.active{
+            display: inline;
+         }
         .main__button{
             padding: 0;
             border: 0;
@@ -365,6 +394,9 @@ hr{
             padding-right: 24px;
             padding-bottom: 35px;
         }
+        .main__paragraf{
+            margin-right: 48px;
+        }
         .main__img{
             height: auto;
             width: 50%;
@@ -372,6 +404,15 @@ hr{
         }
         .parag--hidden-on-tablet{
             display: none;
+        }
+        .parag--hidden-on-PC{
+            display: none;
+        }
+        .parag--hidden-on-tablet.active{
+            display: inline;
+         }
+        .parag--hidden-on-PC.active{
+            display: inline;
         }
         hr{
             display: none;
@@ -500,6 +541,12 @@ hr{
                 border-radius: 10px;
                 border-radius: 8px;
 
+            }
+            .parag--hidden-on-PC{
+                display: none;
+            }
+            .parag--hidden-on-PC.active{
+                display: inline;
             }
             hr{
                 display: none;

@@ -1,19 +1,21 @@
-const hiddenText =  document.querySelector('.parag--hidden-on-phone');
-const mainButton = document.querySelector('.section__button')
-const width = window.innerWidth
-document.addEventListener('DOMContentLoaded', () => {
+const hiddenText1 = document.querySelector('.parag--hidden-on-phone');
+const hiddenText2 = document.querySelector('.parag--hidden-on-tablet');
+const hiddenText3 = document.querySelector('.parag--hidden-on-PC');
+const hiddenArr = [hiddenText1, hiddenText2, hiddenText3];
+const mainButton = document.querySelector('.section__button');
+const width = window.innerWidth;
+mainButton.addEventListener('click', ()=>{
     if(width < 768){
-        mainButton.addEventListener('click', ()=>{
-            let classOfButton = mainButton.classList;
-            if(classOfButton[1] === 'show-more'){
-                hiddenText.style.display = 'block'
-                hiddenText.classList.remove('show-more')
-                hiddenText.classList.add('hide')
-            }if(classOfButton[1] === 'hide'){
-                hiddenText.style.display = 'none'
-                hiddenText.classList.add('show-more')
-                hiddenText.classList.remove('hide')
+        hiddenText1.classList.toggle("active");
+        hiddenText2.classList.toggle("active");
+        hiddenText3.classList.toggle("active");
+    }
+    if(width >= 768 && width <1440){
+        hiddenText2.classList.toggle("active");
+        hiddenText3.classList.toggle("active");
+    }
+    if(width >= 1440){
+        hiddenText3.classList.toggle("active");
+    }
+})
 
-            }
-        })
-    }})
