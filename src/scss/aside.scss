@@ -5,7 +5,17 @@ $gg: #7E7E82;
 html, body{
     min-height: 100vh;
 }
-
+.aside__item:hover::before{
+    content: "";
+    position: absolute;
+    background-color: $psevdo;
+    height: 32px;
+    width: 4px;
+    top: -8px;
+    left: -24px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
 @media (min-width:320px) and (max-width: 767px) {
     .aside{
         flex-direction: column;

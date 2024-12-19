@@ -50,7 +50,7 @@ h2{
     position: relative;
     z-index: 20;
 }
-.button-burger.active{
+.button-burger:hover{
     background-image: url("../img/burger--hidden.svg");
 }
 .Group{
