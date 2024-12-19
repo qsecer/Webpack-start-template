@@ -164,11 +164,17 @@ $bullet: #DDDDDD;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 240px;
+        min-width: 240px;
+        width: 22%;
+        margin-bottom: 16px;
+        margin-right: 32px;
         height: 72px;
         background-color: $w;
         border-radius: 10px;
 
+    }
+    .brand-table-item:nth-child(4n){
+        margin-right: 0;
     }
     .brand-table-image{
         margin: 16px;

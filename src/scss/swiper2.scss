@@ -127,11 +127,11 @@ $color-link: #FF3E79;
         }
         
         .view-table__wrapper {
-            display: grid;
-            grid-template-columns: repeat(4, 240px);
-            gap: 16px 24px;
-            margin-bottom: 24px;
-            margin-left: 22px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 24px;
+            justify-content: flex-start;
             
     
     
@@ -139,7 +139,10 @@ $color-link: #FF3E79;
         .view-table__item {
             display: flex;
             justify-content: space-between;
-            width: 240px;
+            min-width: 240px;
+            width: 22%;
+            margin-right: 32px;
+            margin-bottom: 16px;
             height: 160px;
             background-color: $w;
             border-radius: 10px;
@@ -148,6 +151,9 @@ $color-link: #FF3E79;
             box-sizing: border-box;
             
     
+        }
+        .view-table__item:nth-child(4n){
+            margin-right: 0;
         }
         .view-table__h2{
             font-size: 16px;
