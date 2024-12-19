@@ -154,13 +154,11 @@ $bullet: #DDDDDD;
         display: none;
     }
     .brand-table {
-        display: grid;
-        grid-template-columns: repeat(4, 240px);
-        gap: 16px 24px;
-        margin-bottom: 24px;
-        margin-left: 22px;
-
-
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 24px;
+        justify-content: flex-start;
     }
     .brand-table-item {
         display: flex;
