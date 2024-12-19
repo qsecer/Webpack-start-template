@@ -4,4 +4,4 @@ let func = function(){
     link.classList.add('active');
     item.classList.add('active');
 }
-document.addEventListener('DOMContentLoaded',)
+document.addEventListener('DOMContentLoaded',func())
