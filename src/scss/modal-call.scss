@@ -8,6 +8,9 @@ $black: #1B1C21;
     color: $black;
     font-size: 24px;
 }
+.modal-call{
+    height: 100%;
+}
 @media screen and (max-width: 767px){
     .modal-call__h2::before{
         content: " ";
@@ -26,7 +29,7 @@ $black: #1B1C21;
         flex-direction: column;
         width: 100%;
         max-width: 360px;
-        height: 676px;
+        
         top: 0;
         right: 0;
         z-index: 30;
@@ -100,7 +103,7 @@ $black: #1B1C21;
         flex-direction: column;
         width: 100%;
         max-width: 360px;
-        height: 676px;
+        
         top: 0;
         right: 0;
         z-index: 30;

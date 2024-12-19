@@ -8,7 +8,6 @@ html, body{
 
 @media (min-width:320px) and (max-width: 767px) {
     .aside{
-        
         flex-direction: column;
         box-sizing: border-box;
         background-color: white;
@@ -190,6 +189,7 @@ html, body{
             background-image: url("../img/chat.svg");
             border: none;
             margin-right: 16px;
+            margin-left: 0;
     
         }
         .profile-PC{
@@ -225,9 +225,11 @@ html, body{
             margin: 0px;
         }
         .aside__email{
-            margin: 12px 0px;
+            margin-top: 16px;
+            margin-bottom: 12px;
             font-size: 16px;
         }
+        
     
         .lang:visited{
                 background-color: $psevdo;
@@ -239,14 +241,20 @@ html, body{
 }
 @media screen and (min-width: 1440px){
     .aside{
-        
-        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 0;
         box-sizing: border-box;
+        flex-direction: column;
         background-color: $w;
         width: 320px;
-        height: inherit;
+        height: 100vh;
         font-family: inherit;
         padding: 33px 29px 0px 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
         
         .aside__cap{
             display: flex;
@@ -304,6 +312,7 @@ html, body{
             border-radius: 50%;
             background-image: url("../img/profile.svg");
             border: none;
+            margin-left: 8px;
     
         }
         .aside__item{
@@ -314,6 +323,9 @@ html, body{
             margin-right: 75px;
             position: relative;
     
+        }
+        .aside__basement{
+            margin-bottom: 32px;
         }
         .aside__item:hover::before{
             content: "";
@@ -329,9 +341,12 @@ html, body{
         .aside__phone-number{
             font-size: 24px;
             margin: 0px;
+            margin-bottom: 40px;
         }
         .aside__email{
-            margin: 12px 0px;
+            margin: 0px;
+            margin-top: 16px;
+            margin-bottom: 12px;
             font-size: 16px;
         }
     

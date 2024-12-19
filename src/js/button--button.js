@@ -1,7 +1,10 @@
+//элементы бургер и боковое меню
 const buttonBurger = document.querySelector('.button-burger');
 const asideMenu = document.querySelector('.aside');
-let dontScroll = document.body.style.position = '';
-let body = document.querySelector('body')
+
+
+let body = document.querySelector('html');
+
 let activeFunc = function(){
     buttonBurger.classList.toggle("active")
     asideMenu.classList.toggle("active")
@@ -15,9 +18,5 @@ let activeFunc = function(){
 }
 buttonBurger.addEventListener('click', activeFunc);
 
-// if (asideMenu.classList[1] === "active"){
-//     dontScroll = document.body.style.position = 'fixed'
-// }
-// if(asideMenu.classList[1] !== "active"){
-//     dontScroll = document.body.style.position = ''
-// }
+export {asideMenu}
+export {buttonBurger}
