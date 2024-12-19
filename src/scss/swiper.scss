@@ -33,7 +33,7 @@ $bullet: #DDDDDD;
         display: flex;
         justify-content: center;
         flex-direction: row;
-        padding-bottom: 16px;
+        padding-bottom: 24px;
     }
     .swiper-pagination-bullet{
         display: block;
@@ -191,6 +191,7 @@ $bullet: #DDDDDD;
         padding: 0;
         background: transparent;
         margin-left: 57px;
+        margin-bottom: 32px;
 
     }
     .show-more::before{

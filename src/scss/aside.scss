@@ -2,6 +2,9 @@ $background: #F8F8F8;
 $w: #ffffff;
 $psevdo: #41F6D7;
 $gg: #7E7E82;
+html, body{
+    min-height: 100vh;
+}
 
 @media (min-width:320px) and (max-width: 767px) {
     .aside{
@@ -276,7 +279,7 @@ $gg: #7E7E82;
         .aside__list{
             padding: 0px;
             margin: 0px;
-            margin-bottom: 241px;
+            margin-bottom: 120px;
         }
         .call-PC{
             width: 40px;
@@ -336,6 +339,7 @@ $gg: #7E7E82;
                 background-color: $gg;
             }
     }
+    
 }
 
 
