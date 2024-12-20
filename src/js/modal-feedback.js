@@ -30,3 +30,4 @@ buttonHideChat.addEventListener('click', function(){
     modalChatList.classList.remove('active');
     body.style.overflow = 'scroll';
 });
+export {modalChatList}

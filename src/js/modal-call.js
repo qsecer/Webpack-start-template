@@ -27,6 +27,6 @@ buttonHideCall.addEventListener('click', function(){
     modalCallList.classList.remove('active')
     body.style.overflow = 'scroll'
  });
-
+export {modalCallList}
 
  
